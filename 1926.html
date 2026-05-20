@@ -12,29 +12,42 @@ body{
     background:#efe6d3;
     font-family:Georgia, serif;
     color:#2b2117;
-    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
 }
 
-.header{
+.container{
     text-align:center;
-    padding:25px;
-    font-size:52px;
-    letter-spacing:3px;
-    background:#efe6d3;
 }
 
-.sheet-wrapper{
-    width:100vw;
-    height:calc(100vh - 110px);
-    overflow-x:auto;
-  overflow:auto;
-    background:#efe6d3;
+h1{
+    font-size:64px;
+    letter-spacing:4px;
+    margin-bottom:30px;
+    font-weight:normal;
 }
 
-iframe{
-    width:100%;
-    height:100%;
-    border:none;
+p{
+    font-size:22px;
+    margin-bottom:50px;
+    color:#5b4a36;
+}
+
+a{
+    display:inline-block;
+    padding:25px 60px;
+    background:#d8c3a5;
+    color:#2b2117;
+    text-decoration:none;
+    font-size:28px;
+    border:1px solid #a88f6c;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#c9b08e;
 }
 
 </style>
@@ -42,13 +55,21 @@ iframe{
 
 <body>
 
-<div class="header">
-THE BLUES ARCHIVE — 1926
-</div>
+<div class="container">
 
-<div class="sheet-wrapper">
+<h1>THE BLUES ARCHIVE — 1926</h1>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vROzkVX1KOtYw2pBwUcPR6RGjd4QZEN818Csrp4xT4xm-NkL_yLkZWtgbbwCEvD255bBcWjxUPJZnLD/pubhtml?gid=0&single=true&widget=true&headers=false"></iframe>
+<p>
+Complete recording archive for 1926 blues releases.
+</p>
+
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vROzkVX1KOtYw2pBwUcPR6RGjd4QZEN818Csrp4xT4xm-NkL_yLkZWtgbbwCEvD255bBcWjxUPJZnLD/pubhtml"
+target="_blank">
+
+ENTER ARCHIVE
+
+</a>
+
 </div>
 
 </body>
