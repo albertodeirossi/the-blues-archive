@@ -9,65 +9,64 @@
 
 body{
     margin:0;
-    background:#ece2cf;
+    background:black;
+    overflow:hidden;
     font-family:Georgia, serif;
-    color:#2a2118;
-}
-
-/* texture leggera */
-body:before{
-    content:"";
-    position:fixed;
-    inset:0;
-    opacity:0.06;
-    pointer-events:none;
-    background-image:
-    radial-gradient(#000 0.4px, transparent 0.4px);
-    background-size:8px 8px;
 }
 
 .container{
-    max-width:1400px;
+    position:relative;
+    width:100vw;
+    height:100vh;
+}
+
+.bg{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
     margin:auto;
-    padding-top:120px;
-    text-align:center;
 }
 
-h1{
-    font-size:82px;
-    font-weight:normal;
-    letter-spacing:6px;
-    margin-bottom:120px;
-}
-
-.years{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
+/* anni cliccabili */
 
 .year{
-    text-decoration:none;
-    color:#2a2118;
-    font-size:42px;
-    padding:28px 50px;
-    border:1px solid #b6a284;
-    background:#f6efe3;
-    transition:0.25s;
-    min-width:180px;
+    position:absolute;
+    width:60px;
+    height:60px;
+    border-radius:8px;
+    transition:0.2s;
 }
 
 .year:hover{
-    background:#dfd0ba;
+    background:rgba(255,255,255,0.12);
 }
 
-footer{
-    margin-top:140px;
-    padding-bottom:40px;
-    font-size:14px;
-    opacity:0.45;
-    letter-spacing:2px;
+/* POSIZIONI */
+
+.y1926{
+    left:18.2%;
+    top:50.8%;
+}
+
+.y1927{
+    left:24.2%;
+    top:50.8%;
+}
+
+.y1928{
+    left:30.2%;
+    top:50.8%;
+}
+
+.y1929{
+    left:36.2%;
+    top:50.8%;
+}
+
+.y1930{
+    left:42.2%;
+    top:50.8%;
 }
 
 </style>
@@ -77,17 +76,15 @@ footer{
 
 <div class="container">
 
-<h1>THE BLUES ARCHIVE</h1>
+<img class="bg"
+src="con cornice etichettte e tutti gli anni(1).png">
 
-<div class="years">
+<a class="year y1926" href="1926.html"></a>
 
-<a class="year" href="1926.html">1926</a>
-
-</div>
-
-<footer>
-ARCHIVE OF AMERICAN BLUES RECORDINGS
-</footer>
+<a class="year y1927" href="#"></a>
+<a class="year y1928" href="#"></a>
+<a class="year y1929" href="#"></a>
+<a class="year y1930" href="#"></a>
 
 </div>
 
