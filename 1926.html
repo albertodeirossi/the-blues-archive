@@ -3,51 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Blues Archive 1926</title>
+<title>The Blues Archive — 1926</title>
 
 <style>
 
 body{
     margin:0;
-    background:#efe6d3;
+    background:#e9dfcc;
     font-family:Georgia, serif;
-    color:#2b2117;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    color:#2b2118;
+}
+
+/* texture leggera */
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    opacity:0.05;
+    pointer-events:none;
+    background-image:
+    radial-gradient(#000 0.4px, transparent 0.4px);
+    background-size:8px 8px;
 }
 
 .container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
     text-align:center;
+    padding:40px;
 }
 
-h1{
-    font-size:64px;
+.small-title{
+    font-size:20px;
     letter-spacing:4px;
-    margin-bottom:30px;
+    margin-bottom:12px;
+    opacity:0.7;
+}
+
+.year{
+    font-size:92px;
+    letter-spacing:8px;
+    margin-bottom:50px;
     font-weight:normal;
 }
 
-p{
-    font-size:22px;
-    margin-bottom:50px;
-    color:#5b4a36;
+.line{
+    width:220px;
+    height:1px;
+    background:#8f7d63;
+    margin-bottom:60px;
+    opacity:0.5;
 }
 
-a{
-    display:inline-block;
-    padding:25px 60px;
-    background:#d8c3a5;
-    color:#2b2117;
+.enter{
     text-decoration:none;
-    font-size:28px;
-    border:1px solid #a88f6c;
-    transition:0.3s;
+    color:#2b2118;
+    border:1px solid #a18d71;
+    background:#f5eee2;
+    padding:24px 60px;
+    font-size:26px;
+    letter-spacing:3px;
+    transition:0.25s;
 }
 
-a:hover{
-    background:#c9b08e;
+.enter:hover{
+    background:#ddd0bb;
 }
 
 </style>
@@ -57,11 +80,18 @@ a:hover{
 
 <div class="container">
 
-<h1>THE BLUES ARCHIVE — 1926</h1>
+<div class="small-title">
+THE BLUES ARCHIVE
+</div>
 
+<div class="year">
+1926
+</div>
 
+<div class="line"></div>
 
-<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vROzkVX1KOtYw2pBwUcPR6RGjd4QZEN818Csrp4xT4xm-NkL_yLkZWtgbbwCEvD255bBcWjxUPJZnLD/pubhtml"
+<a class="enter"
+href="https://docs.google.com/spreadsheets/d/e/2PACX-1vROzkVX1KOtYw2pBwUcPR6RGjd4QZEN818Csrp4xT4xm-NkL_yLkZWtgbbwCEvD255bBcWjxUPJZnLD/pubhtml"
 target="_blank">
 
 ENTER ARCHIVE
