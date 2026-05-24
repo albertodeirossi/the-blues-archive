@@ -11,43 +11,47 @@
 
 body{
     margin:0;
-    background:black;
     overflow:hidden;
     font-family:Georgia, serif;
-}
 
-.container{
-    position:relative;
+    background-image:url("homepage.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     width:100vw;
     height:100vh;
 }
 
-.bg{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+/* overlay leggero */
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.10);
 }
 
-/* AREA CLICCABILE */
+/* ANNI CLICCABILI */
 
 .year{
     position:absolute;
-    width:85px;
-    height:85px;
+    width:90px;
+    height:90px;
     border-radius:10px;
-    transition:0.2s;
+    transition:0.25s;
+    z-index:10;
 }
 
 .year:hover{
-    background:rgba(255,255,255,0.10);
+    background:rgba(255,255,255,0.12);
 }
 
 /* 1926 */
 
 .y1926{
-    left:17.4%;
-    top:49.6%;
+    left:17.2%;
+    top:49.5%;
 }
 
 </style>
@@ -55,13 +59,7 @@ body{
 
 <body>
 
-<div class="container">
-
-<img class="bg" src="homepage.png">
-
 <a class="year y1926" href="1926.html"></a>
-
-</div>
 
 </body>
 </html>
