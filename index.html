@@ -12,27 +12,41 @@
 body{
     margin:0;
     overflow:hidden;
+    background:#1e1712;
     font-family:Georgia, serif;
+}
 
-    background-image:url("homepage.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+/* CONTENITORE */
 
+.container{
+    position:relative;
     width:100vw;
     height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-/* overlay leggero */
+/* IMMAGINE */
 
-body:before{
+.bg{
+    width:100vw;
+    height:100vh;
+    object-fit:contain;
+    display:block;
+}
+
+/* overlay leggerissimo */
+
+.container:before{
     content:"";
-    position:fixed;
+    position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.10);
+    background:rgba(0,0,0,0.06);
+    pointer-events:none;
 }
 
-/* ANNI CLICCABILI */
+/* ANNI */
 
 .year{
     position:absolute;
@@ -44,10 +58,10 @@ body:before{
 }
 
 .year:hover{
-    background:rgba(255,255,255,0.12);
+    background:rgba(255,255,255,0.10);
 }
 
-/* 1926 */
+/* POSIZIONE 1926 */
 
 .y1926{
     left:17.2%;
@@ -59,7 +73,13 @@ body:before{
 
 <body>
 
+<div class="container">
+
+<img class="bg" src="homepage.png">
+
 <a class="year y1926" href="1926.html"></a>
+
+</div>
 
 </body>
 </html>
