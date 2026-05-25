@@ -16,8 +16,6 @@ body{
     font-family:Georgia, serif;
 }
 
-/* CONTENITORE */
-
 .container{
     position:relative;
     width:100vw;
@@ -27,8 +25,6 @@ body{
     align-items:center;
 }
 
-/* IMMAGINE */
-
 .bg{
     width:100vw;
     height:100vh;
@@ -36,41 +32,23 @@ body{
     display:block;
 }
 
-/* overlay leggerissimo */
-
-.container:before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.06);
-    pointer-events:none;
-}
-
-/* ANNI */
-
 .year{
     position:absolute;
     width:110px;
     height:110px;
-    border-radius:10px;
-    transition:0.25s;
-    z-index:10;
-
     border:2px solid red;
     background:rgba(255,0,0,0.25);
+    border-radius:10px;
+    z-index:10;
 }
 
-.year:hover{
-    background:rgba(255,230,180,0.18);
-    box-shadow:0 0 20px rgba(255,220,150,0.35);
-}
-
-/* POSIZIONE 1926 */
+/* 1926 */
 
 .y1926{
-    left:42%;
-    top:57%;
+    left:7%;
+    top:74%;
 }
+
 </style>
 </head>
 
