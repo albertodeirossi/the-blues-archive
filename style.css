@@ -118,3 +118,13 @@ p{
 .artist-links a:hover{
     text-decoration:underline;
 }
+/* LETTERE DELL'ALFABETO */
+
+.letter{
+    text-align:center;
+    color:#d9b36c;
+    font-weight:400;
+    font-size:42px;
+    margin:25px 0 20px 0;
+    letter-spacing:4px;
+}
