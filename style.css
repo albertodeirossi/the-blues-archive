@@ -85,12 +85,11 @@ p{
 }
 
 .artist-name{
-    font-size:32px;
-    font-weight:400;
+    font-size:28px;
+    letter-spacing:2px;
     color:#d9b36c;
     text-transform:uppercase;
-    letter-spacing:3px;
-    margin:0 0 14px 0;
+    margin-bottom:10px;
 }
 
 .artist-years{
